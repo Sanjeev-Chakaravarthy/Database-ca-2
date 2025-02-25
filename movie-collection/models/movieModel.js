@@ -20,9 +20,10 @@ const movieSchema = new mongoose.Schema({
         type: Number,
         required: [true,'Number of copies available in the collection']
     },
+},
     
-    timestamps:true
+    { timestamps: true }
 
-})
+)
 
 module.exports = mongoose.model('Movie',movieSchema)
